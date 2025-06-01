@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+.nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #555;
+}
+
+.error {
+  color: #d00;
+  font-size: 0.9em;
+}
+
+.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+}
+
+.tip-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+}
+.tip-card .tip-message {
+  white-space: pre-wrap;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+    padding: 0 10px;
+  }
+  .nav {
+    font-size: 0.9em;
+  }
+}
