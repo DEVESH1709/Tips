@@ -35,6 +35,7 @@ npm start
 ```
 
 --> Features
+
 Page 1: Tip Submission Form
 
 1- Full Name (optional)
