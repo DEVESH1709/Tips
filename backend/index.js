@@ -19,7 +19,9 @@ if (!GITHUB_TOKEN || !GITHUB_OWNER || !GITHUB_REPO) {
 
 const GITHUB_API_URL = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${FILE_PATH}`;
 
-app.use(cors());
+// app.use(cors());
+app.use(cors({ origin: 'http://localhost:5173' }));
+
 app.use(express.json());
 
 
